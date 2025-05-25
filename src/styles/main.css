@@ -1,0 +1,23 @@
+/* Custom styles for the Docker Configurator */
+.fade-enter {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3b82f6;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
